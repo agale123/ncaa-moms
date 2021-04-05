@@ -13,7 +13,7 @@ api = tweepy.API(auth)
 
 # Generate the search query based on all combinations of these phrases
 names = ['Adia Barnes', "Arizona coach"]
-modifiers = ['mother', 'breastfeeding', 'pumping']
+modifiers = ['mother', 'breastfeeding', 'pumping', 'nursing', 'normalize']
 query = ' OR '.join(map(lambda x: x[0] + ' ' + x[1], itertools.product(names, modifiers)))
 
 # Open a file for writing the tweets to
